@@ -1,18 +1,6 @@
-const { odd, even }  = require('./var');
-const checkNum = require('./func');
-
-function checkString( str ){
-    if( str.length %2 ){
-        return odd;
-    }
-    return even;
-}
-
-
-console.log(checkString('zzzzzzzz'));
-console.log(checkNum(10));
-
-const os = require('os');
-
-console.log('core-------------------');
-console.log(os.cpus().length)
+const http = require('http');
+http.createServer((req,res) => {
+    res.end('dddd');
+}).listen(8000, ()=>{
+    console.log('시작!!');
+})

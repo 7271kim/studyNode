@@ -1,8 +1,5 @@
 const Sequelize = require('sequelize');
 
-/**
- * https://www.erdcloud.com/
- */
 module.exports = class User extends Sequelize.Model {
   static init(sequelize) {
     return super.init({
